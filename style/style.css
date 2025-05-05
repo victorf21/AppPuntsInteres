@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 420px;
+    background: #f4f4f4;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+#llistaPunts {
+    margin-bottom: 10px;
+}
+
+#totalElements {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#netejarLlista {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#netejarLlista:hover {
+    background-color: #cc0000;
+}
+
+.dropzone {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.dropzone.dragover {
+    border-color: #000;
+}
+
+#map {
+    flex: 1;
+    height: 100vh;
+}
+
+.punt {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.punt.espai {
+    background-color: #a0fcd6;
+}
+
+.punt.atraccio {
+    background-color: #e7fe90;
+}
+
+.punt.museu {
+    background-color: #f8d58a;
+}

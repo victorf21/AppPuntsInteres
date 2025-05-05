@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Punts d'Interès</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="filters">
+                <select id="tipusFilter">
+                    <option value="Tots">Tots</option>
+                </select>
+                <select id="ordreFilter">
+                    <option value="Ascendent">Ascendent</option>
+                    <option value="Descendent">Descendent</option>
+                </select>
+                <input type="text" id="nomFilter" placeholder="Filtrar per nom">
+            </div>
+            <div class="info">
+                <div id="llistaPunts">No hi ha informació a mostrar</div>
+                <div id="totalElements">Total elements: 0</div>
+                <button id="netejarLlista">Netejar Llista</button>
+            </div>
+            <div class="dropzone" id="dropzone">
+                Arrossega el fitxer CSV aquí
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="/script/const.js"></script>
+    <script src="/script/PuntInteres.js"></script>
+    <script src="/script/Mapa.js"></script>
+    <script src="/script/app.js"></script>
+</body>
+</html>
